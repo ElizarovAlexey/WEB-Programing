@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.form {
+    margin: 20px 0;
+}
+
+.form__input {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.form__btn {
+    padding: 10px 20px;
+    
+}
+
+.list li {
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 18px;
+}

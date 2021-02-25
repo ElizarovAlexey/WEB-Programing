@@ -1,0 +1,11 @@
+.btn {
+    width: 40px;
+    height: 40px;
+}
+
+.input__count {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+}
