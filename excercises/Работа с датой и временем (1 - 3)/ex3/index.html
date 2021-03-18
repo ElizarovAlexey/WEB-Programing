@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="timer">
+        <form class="timer__form">
+            <input id="days" type="number" placeholder="Дни">
+            <input id="hours" type="number" placeholder="Часы">
+            <input id="minutes" type="number" placeholder="Минуты">
+        </form>
+    </div>
+
+    <div id="clock" class="clock">
+        <div id="clock__text">
+            <span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>
+        </div>
+        <p id="stop__text"></p>
+        <button id="clock__start" class="clock__start">
+            Start
+        </button>
+    </div>
+
+    <script src="main.js"></script>
+
+    <style>
+        .clock {
+            font-size: 28px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 200px;
+        }
+
+        .hours {
+            color: red;
+        }
+
+        .minutes {
+            color: green;
+        }
+
+        .seconds {
+            color: blue;
+        }
+
+        .timer {
+            margin-top: 50px;
+        }
+
+        .timer__form {
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        .timer__form input {
+            display: block;
+            margin-bottom: 10px;
+            width: 200px;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+
+        .clock__start {
+            width: 100px;
+        }
+    </style>
+</body>
+
+</html>

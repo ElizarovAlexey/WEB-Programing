@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="clock" class="clock">
+        <span class="hours"></span>:<span class="minutes"></span>:<span class="seconds"></span>
+        <div class="clock__container-btns">
+            <button id="clock__start" class="clock__start">
+                Start
+            </button>
+            <button id="clock__stop" class="clock__stop">
+                Stop
+            </button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+    <style>
+        .clock {
+            font-size: 28px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 100px;
+        }
+
+        .hours {
+            color: red;
+        }
+
+        .minutes {
+            color: green;
+        }
+
+        .seconds {
+            color: blue;
+        }
+
+        .clock__container-btns {
+            display: flex;
+            justify-content: space-between;
+
+            margin-top: 20px;
+        }
+    </style>
+</body>
+</html>
