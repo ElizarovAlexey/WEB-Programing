@@ -35,6 +35,7 @@ const tick = () => {
             clock.children[0].innerHTML = (Math.floor(milliseconds / dayInMilliseconds)).toString();
             clock.children[1].innerHTML = (Math.floor((milliseconds % dayInMilliseconds) / hoursInMilliseconds)).toString();
             clock.children[2].innerHTML = (Math.floor((milliseconds % hoursInMilliseconds) / minutesInMilliseconds)).toString();
+            clock.children[3].innerHTML = (Math.floor((milliseconds % minutesInMilliseconds) / 1000)).toString();
 
             daysInput.value = '';
             hoursInput.value = '';
@@ -63,29 +64,6 @@ const tick = () => {
             }, 1000);
         }
     });
-
-    // let date = new Date(daysInput.value + ':' + hoursInput.value + ':' + minutesInput.value);
-
-    // let hours = date.getHours();
-    // let minutes = date.getMinutes();
-    // let seconds = date.getSeconds();
-
-    // clock.children[0].innerHTML = hours;
-    // clock.children[1].innerHTML = minutes;
-    // clock.children[2].innerHTML = seconds;
 }
 
 tick();
-
-// let timer;
-
-// const startTick = () => {
-//     timer = setInterval(() => {
-//         tick();
-//     }, 1000);
-//     tick();
-// }
-
-// document.getElementById('clock__start').addEventListener('click', () => {
-//     startTick();
-// });
