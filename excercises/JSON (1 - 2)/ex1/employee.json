@@ -1,0 +1,22 @@
+{
+  "employee": {
+    "personalInfo": {
+      "fullName": "Surname Name Patronymic",
+      "birthDay": "01.01.1960",
+      "gender": "male",
+      "birthPlace": "Earth",
+      "email": "name@email.com",
+      "IDNP": "111-222-333-444",
+      "phone": "+373-686-868",
+      "homePhone": "0231-2-31-23"
+    },
+    "workingInfo": {
+      "post": "project manager",
+      "department": "administration",
+      "firstWorkingDay": "02.02.2000",
+      "workExperience": 21,
+      "salary": 15500,
+      "workSchedule": "From 08:00 to 17:00. Lunch from 12:00 to 13:00"
+    }
+  }
+}
