@@ -2,7 +2,7 @@ let employee = [];
 
 async function loadEmployees() {
     let respone = await fetch('http://localhost:3000/employee');
-    employee = await respone.json();
+    return await respone.json();
 }
 
 const printEmployees = (employee) => {
@@ -33,7 +33,7 @@ const printEmployees = (employee) => {
 }
 
 async function main() {
-    await loadEmployees();
+    employee = await loadEmployees();
     printEmployees(employee);
 }
 
