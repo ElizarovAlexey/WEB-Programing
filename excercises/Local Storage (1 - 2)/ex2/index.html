@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="todos">
+        <h1 class="todos__title">Список задач</h1>
+        
+        <form id="todos__form" class="todos__form" onsubmit="return false;">
+            <input id="todos__input" type="text" placeholder="Ввести задачу">
+        </form>
+
+        <ul id="todos__list" class="todos__list">
+
+        </ul>
+    </div>
+
+
+    <style>
+        .todos {
+            width: 300px;
+            margin: 0 auto;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .todos__form {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        #todos__input {
+            display: block;
+            width: 100%;
+            border: 0;
+            padding: 0;
+            border-bottom: 2px solid gray;
+            font-size: 16px;
+            text-align: center;
+            margin: 0 auto;
+            height: 30px;
+        }
+
+        .todos__list {
+            display: block;
+            width: 300px;
+            padding: 0;
+            list-style: none;
+
+            text-transform: capitalize;
+        }
+
+        .todos__list-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15px;
+        }
+
+        .todo__delete {
+            background: 0;
+            border: 0;
+            padding: 0;
+            cursor: pointer;
+            color: red;
+        }
+    </style>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
