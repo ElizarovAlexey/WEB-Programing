@@ -2,7 +2,7 @@ let employees = [];
 
 async function loadEmployees() {
     let respone = await fetch('http://localhost:3000/employees');
-    employees = await respone.json();
+    return await respone.json();
 }
 
 const printEmployees = () => {
@@ -35,7 +35,7 @@ const printEmployees = () => {
     employeesBlock.innerHTML = content;
 }
 
-const calculates = () => {
+const printCalculates = () => {
     const calculatesBlock = document.getElementById('calculates');
 
     let sumSalaries = 0;
@@ -65,9 +65,9 @@ const calculates = () => {
 }
 
 async function main() {
-    await loadEmployees();
+    employees = await loadEmployees();
     printEmployees();
-    calculates();
+    printCalculates();
 }
 
 main();
