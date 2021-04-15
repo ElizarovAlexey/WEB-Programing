@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app">
+        <div class="container">
+            <p class="question">На каком языке программируете?</p>
+            <form>
+                <p>
+                    <input type="radio" name="language" v-model="language" value="JS"> JavaScript
+                </p>
+                <p>
+                    <input type="radio" name="language" v-model="language" value="Python"> Python
+                </p>
+                <p>
+                    <input type="radio" name="language" v-model="language" value="Java"> Java
+                </p>
+                <p>Опыт? <input v-model="experience" type="text"> лет</p>
+            </form>
+            <p>Ваша зарплата <span class="salary">${{ salary }} </span></p>
+        </div>
+    </div>
+
+
+    <style>
+        .container {
+            max-width: 500px;
+            text-align: center;
+            margin: 0 auto;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .salary {
+            font-weight: bold;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
