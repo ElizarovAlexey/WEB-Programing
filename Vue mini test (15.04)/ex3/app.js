@@ -21,7 +21,7 @@ var app = new Vue({
                     coefficient = 1;
                     break;
                 case 'Python':
-                    coefficient = 0.7;
+                    coefficient = 2.22;
                     break;
                 case 'Java':
                     coefficient = 1.3;
